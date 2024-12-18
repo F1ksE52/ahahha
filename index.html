@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт Фотогрофа</title>
+    <link type="image/x-icon" href="img/logo.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="app.js" defer=""></script>
+
+</head>
+<body>
+
+  <header>
+
+    <div class="logo">
+        <img src="img/logo.jpg">
+    </div>
+
+    <h1 class="site-title">Я у мамы Фотограф</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">О нас</a></li>
+            <li><a href="#section2">фотографии</a></li>
+            <li><a href="#section3">посмотреть</a></li>
+        </ul>
+    </nav>
+
+  </header>
+    
+
+
+    <div class="slider-container">
+        <div class="slider">
+          <img src="img/1.jpg"  height="100px" onclick="openFullscreenImage(this)">
+          <img src="img/2.jpg"  height="100px" onclick="openFullscreenImage(this)">
+          <img src="img/3.jpg"  height="100px" onclick="openFullscreenImage(this)">
+          <img src="img/4.jpg"  height="100px" onclick="openFullscreenImage(this)">
+        </div>
+        <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+        <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>  
+    </div>
+
+    <section id="section1">
+
+      <div class="text_o_nas">
+        <h1>Обо мне:</h1>
+        <p>люблю делать любительские фотографии и запечетлять жизненные моменты, города и страны </p>
+        <p>Я, "Зубенко Михаил Петрович", предлагаю вам не просто посмотреть на эти уникальные снимки, но и  погрузиться в месте со мной в эти незабываемые моменты жизни.</p>
+      </div>
+
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+      <div class="elfsight-app-1c5c3d38-d531-4d2e-bfb6-2fa411e8f53e"></div>
+
+    </section>
+
+
+    <section id="section2">
+      
+      <div class="column-container">
+
+        <div class="column">
+            <h2>Город</h2>
+            <img src="img/5.jpg" class="pic" onclick="openFullscreenImage(this)">
+            <p>Город который мне понравился.</p>
+        </div>
+
+        <div class="column">
+            <h2>Мост</h2>
+            <img src="img/6.jpg" class="pic" onclick="openFullscreenImage(this)">
+            <p>Красиво Светится.</p>
+        </div>
+
+        <div class="column">
+            <h2>Тайны Озера</h2>
+            <img src="img/7.jpg" class="pic" onclick="openFullscreenImage(this)">
+            <p> Я купался в нём после бани.</p>
+        </div>
+
+      </div>
+
+    <div class="column-container">
+
+        <div class="column">
+            <h2>Очарование: не совсем Белых щенок</h2>
+            <img src="img/8.jpg" class="pic" onclick="openFullscreenImage(this)">
+            <p>правда милый?</p>
+        </div>
+
+        <div class="column">
+            <h2>Ещё одно милое озеро</h2>
+            <img src="img/9.jpg" class="pic" onclick="openFullscreenImage(this)">
+            <p>Истинная красота озёр скрывается в пучинах вод. </p>
+        </div>
+
+        <div class="column">
+            <h2>Цветы</h2>
+            <img src="img/10.jpg" class="pic" onclick="openFullscreenImage(this)">
+            <p>Набрал маме Цветов.</p>
+        </div>
+
+    </div>
+
+    <div id="fullscreen-container" class="hidden">
+      <span class="close-button" onclick="closeFullscreenImage()">&times;</span>
+      <img src="" alt="Полноэкранное изображение" id="fullscreen-image">
+    </div>
+
+    </section>
+
+    <section id="section3">
+
+    <form class="obratnuj-zvonok" autocomplete="off" /*action='email.php'*/ method='post'>
+        <div class="form-zvonok"> 
+          
+          <div>
+            <label>Имя <span>*</span></label>
+            <input type='text' name='name' required></div>
+          <div>
+            <label>Номер телефона (с кодом) <span>*</span></label>
+            <input type='text' name='phone' required></div>
+          <div>
+            <label>Сообщение</label>
+            <input type='text' name='message'>
+          </div>
+
+          <div>
+            <label>Введите текст с картинки<span>*</span></label>
+            <input type='text' name='capcha' required>
+          </div>
+          <img src="img/capcha.jpg" class="pic">
+          <input class="bot-send-mail" type='submit' value='Послать заявку'>
+        </div>
+    </form>
+
+    </section>
+
+    <button id="scrollToTopButton">Вверх</button>
+
+
+</body>
+
+<footer style="width: 100%;">
+
+  <div class="social-icons">
+    <a href="https://t.me/F1ksE52" class="social-icon"><img src="img/tg.webp" alt="Tg"></a>
+    <a href="https://vk.com/f1kse" class="social-icon"><img src="img/vk.png" alt="Vk"></a>
+    <a href="https://www.instagram.com/" class="social-icon"><img src="img/ig.png" alt="Ig"></a>
+  </div>
+  
+</footer>
+
+
+</html>
